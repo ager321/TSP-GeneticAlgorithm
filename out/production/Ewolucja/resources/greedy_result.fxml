@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="userInterface.GreedyResultController">
+    <children>
+        <Label layoutX="31.0" layoutY="29.0" prefHeight="52.0" prefWidth="149.0" text="Najlepsze rozwiązanie:" />
+        <Label fx:id="best_cost" layoutX="201.0" layoutY="47.0" text="0" />
+        <GridPane hgap="10.0" layoutX="14.0" layoutY="216.0" prefHeight="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <Button fx:id="button_back_choice" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#backToChoice" prefHeight="221.0" prefWidth="232.0" text="Powrót do wyboru algorytmów" textAlignment="CENTER" wrapText="true" />
+                <Button fx:id="back_to_random_button" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#backToRandom" text="Powrót do losowego algorytmu" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="1" />
+                <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Zapisz do pliku" textAlignment="CENTER" GridPane.columnIndex="2">
+                    <GridPane.margin>
+                        <Insets />
+                    </GridPane.margin>
+                </Button>
+            </children>
+        </GridPane>
+    </children>
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+</AnchorPane>
